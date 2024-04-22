@@ -26,7 +26,7 @@ const Home = () => {
                             Ежемесячная <br/>подписка
                         </h5>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
+                            Lorem dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
