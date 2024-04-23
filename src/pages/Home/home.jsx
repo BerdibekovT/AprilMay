@@ -1,9 +1,8 @@
 import React from 'react';
 import './home.css'
 import castle from "../../pics/minecraft-castle.png"
-import Accordion from '@mui/material/Accordion';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import AccordionSummary from '@mui/material/AccordionSummary';
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
 
 const Home = () => {
     return (
@@ -59,101 +58,155 @@ const Home = () => {
             </div>
             <div className={"div3home"}>
                 <h2>
-                    Все виды спорта
+                    Все наши услуги
                 </h2>
                 <div className={"div3buttons"}>
-                    <Accordion sx={{
-                        color: "#5B5B5B",
-                        border: "3px solid #5B5B5B",
-                        width: "789px",
-                        fontSize: "48px",
-                        borderRadius: "36px",
-                        textAlign: "center",
-                        marginTop: "33px",
-                        marginLeft: "150px"
-                    }}>
-                        <AccordionSummary
-                            aria-controls="panel1-content"
-                            id="panel1-header">
-                            <p>
-                                Футбол
-                            </p>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam perspiciatis reiciendis repellat tempore.
-                            </p>
-                        </AccordionDetails>
-                    </Accordion>
-                    <Accordion sx={{
-                        color: "#5B5B5B",
-                        border: "3px solid #5B5B5B",
-                        width: "789px",
-                        fontSize: "48px",
-                        borderRadius: "36px",
-                        textAlign: "center",
-                        marginTop: "33px",
-                        marginLeft: "150px"
-                    }}>
-                        <AccordionSummary
-                            aria-controls="panel1-content"
-                            id="panel1-header">
-                            <p>
-                                Футбол
-                            </p>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam perspiciatis reiciendis repellat tempore.
-                            </p>
-                        </AccordionDetails>
-                    </Accordion>
-                    <Accordion sx={{
-                        color: "#5B5B5B",
-                        border: "3px solid #5B5B5B",
-                        width: "789px",
-                        fontSize: "48px",
-                        borderRadius: "36px",
-                        textAlign: "center",
-                        marginTop: "33px",
-                        marginLeft: "150px"
-                    }}>
-                        <AccordionSummary
-                            aria-controls="panel1-content"
-                            id="panel1-header">
-                            <p>
-                                Футбол
-                            </p>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam perspiciatis reiciendis repellat tempore.
-                            </p>
-                        </AccordionDetails>
-                    </Accordion>
-                    <Accordion sx={{
-                        color: "#5B5B5B",
-                        border: "3px solid #5B5B5B",
-                        width: "789px",
-                        fontSize: "48px",
-                        borderRadius: "36px",
-                        textAlign: "center",
-                        marginTop: "33px",
-                        marginLeft: "150px"
-                    }}>
-                        <AccordionSummary
-                            aria-controls="panel1-content"
-                            id="panel1-header">
-                            <p>
-                                Футбол
-                            </p>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nam perspiciatis reiciendis repellat tempore.
-                            </p>
-                        </AccordionDetails>
-                    </Accordion>
+                    <div className={"buttonrow"}>
+                        <Stack direction="row" spacing={8}>
+                            <Button sx = {{
+                                width: 304,
+                                height: 208,
+                                color: "#5B5B5B",
+                                borderRadius: "36px",
+                                border: 3,
+                                borderColor: "#5B5B5B",
+                                fontSize: "24px",
+                                textAlign: "center",
+                                ":hover": {
+                                    width: 304,
+                                    height: 208,
+                                    color: "#ffffff",
+                                    borderRadius: "36px",
+                                    border: 3,
+                                    borderColor: "#5B5B5B",
+                                    fontSize: "24px",
+                                    textAlign: "center",
+                                    background: "#5B5B5B"
+                                }
+                            }} variant="outlined" href="#outlined-buttons">
+                                Футбольное поле
+                            </Button>
+                            <Button sx = {{
+                                width: 304,
+                                height: 208,
+                                color: "#5B5B5B",
+                                borderRadius: "36px",
+                                border: 3,
+                                borderColor: "#5B5B5B",
+                                fontSize: "24px",
+                                textAlign: "center",
+                                ":hover": {
+                                    width: 304,
+                                    height: 208,
+                                    color: "#ffffff",
+                                    borderRadius: "36px",
+                                    border: 3,
+                                    borderColor: "#5B5B5B",
+                                    fontSize: "24px",
+                                    textAlign: "center",
+                                    background: "#5B5B5B"
+                                }
+                            }} variant="outlined" href="#outlined-buttons">
+                                Баскетбольное поле
+                            </Button>
+                            <Button sx = {{
+                                width: 304,
+                                height: 208,
+                                color: "#5B5B5B",
+                                borderRadius: "36px",
+                                border: 3,
+                                borderColor: "#5B5B5B",
+                                fontSize: "24px",
+                                textAlign: "center",
+                                ":hover": {
+                                    width: 304,
+                                    height: 208,
+                                    color: "#ffffff",
+                                    borderRadius: "36px",
+                                    border: 3,
+                                    borderColor: "#5B5B5B",
+                                    fontSize: "24px",
+                                    textAlign: "center",
+                                    background: "#5B5B5B"
+                                }
+                            }} variant="outlined" href="#outlined-buttons">
+                                Хоккейная арена
+                            </Button>
+                        </Stack>
+                    </div>
+                    <div className={"buttonrow"}>
+                        <Stack direction="row" spacing={8}>
+                            <Button sx = {{
+                                width: 304,
+                                height: 208,
+                                color: "#5B5B5B",
+                                borderRadius: "36px",
+                                border: 3,
+                                borderColor: "#5B5B5B",
+                                fontSize: "24px",
+                                textAlign: "center",
+                                ":hover": {
+                                    width: 304,
+                                    height: 208,
+                                    color: "#ffffff",
+                                    borderRadius: "36px",
+                                    border: 3,
+                                    borderColor: "#5B5B5B",
+                                    fontSize: "24px",
+                                    textAlign: "center",
+                                    background: "#5B5B5B"
+                                }
+                            }} variant="outlined" href="#outlined-buttons">
+                                Теннисный корт
+                            </Button>
+                            <Button sx = {{
+                                width: 304,
+                                height: 208,
+                                color: "#5B5B5B",
+                                borderRadius: "36px",
+                                border: 3,
+                                borderColor: "#5B5B5B",
+                                fontSize: "24px",
+                                textAlign: "center",
+                                ":hover": {
+                                    width: 304,
+                                    height: 208,
+                                    color: "#ffffff",
+                                    borderRadius: "36px",
+                                    border: 3,
+                                    borderColor: "#5B5B5B",
+                                    fontSize: "24px",
+                                    textAlign: "center",
+                                    background: "#5B5B5B"
+                                }
+                            }} variant="outlined" href="#outlined-buttons">
+                                Бассейн
+                            </Button>
+                            <Button sx = {{
+                                width: 304,
+                                height: 208,
+                                color: "#5B5B5B",
+                                borderRadius: "36px",
+                                border: 3,
+                                borderColor: "#5B5B5B",
+                                fontSize: "24px",
+                                textAlign: "center",
+                                ":hover": {
+                                    width: 304,
+                                    height: 208,
+                                    color: "#ffffff",
+                                    borderRadius: "36px",
+                                    border: 3,
+                                    borderColor: "#5B5B5B",
+                                    fontSize: "24px",
+                                    textAlign: "center",
+                                    background: "#5B5B5B"
+                                }
+                            }} variant="outlined" href="#outlined-buttons">
+                                Гольф поле
+                            </Button>
+                        </Stack>
+                    </div>
                 </div>
             </div>
         </>

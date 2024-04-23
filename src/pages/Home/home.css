@@ -73,5 +73,10 @@
 .div3buttons{
     display: block;
     margin-top: 55px;
-    padding-left: 153px;
+    align-items: center;
+    width: 100%;
+    margin-left: 400px;
+}
+.buttonrow{
+    margin-top: 72px;
 }
