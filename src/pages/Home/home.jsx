@@ -3,212 +3,96 @@ import './home.css'
 import castle from "../../pics/minecraft-castle.png"
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
+import { Box, Container, Grid } from "@mui/material";
+import Typography from "@mui/material/Typography";
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import Buttonforhome from "./button";
 
 const Home = () => {
     return (
         <>
-            <div className={"home"}>
-                <div className={"homediv"}>
-                    <p>
-                        Занимайте помещения только у нас. Низкие цены а также скидки для постоянных клиентов!
-                    </p>
-                </div>
-                <img src={castle} alt=""/>
-            </div>
-            <div className={"div2home"}>
-                <h2>
+            <Container sx={{paddingTop:10}}>
+                <Grid container spacing={5}>
+                    <Grid item  xs={12} sm={12} md={6} lg={6} xl={6}>
+                        <div className={"homediv"}>
+                            <p>
+                                Занимайте помещения только у нас. Низкие цены а также скидки для постоянных клиентов!
+                            </p>
+                        </div>
+                    </Grid>
+                    <Grid item  xs={12} sm={12} md={6} lg={6} xl={6}>
+                        <div className={"homeimg"}>
+                            <img src={castle} alt=""/>
+                        </div>
+                    </Grid>
+                </Grid>
+            </Container>
+            <Box sx={{paddingTop:20}}>
+                <Typography variant={"h2"} sx={{textAlign:"center"}}>
                     Оформите подписку!
-                </h2>
-                <div className={"subs"}>
-                    <div className={"sub"}>
-                        <h5>
-                            Ежемесячная <br/>подписка
-                        </h5>
-                        <p>
-                            Lorem dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
-                        </p>
-                    </div>
-                    <div className={"sub"}>
-                        <h5>
-                            Ежемесячная <br/>подписка
-                        </h5>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!                        </p>
-                    </div>
-                    <div className={"sub"}>
-                        <h5>
-                            Ежемесячная <br/>подписка
-                        </h5>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum provident sint!                        </p>
-                    </div>
-                </div>
-            </div>
-            <div className={"div3home"}>
-                <h2>
+                </Typography>
+                <Grid sx={{
+                    padding:10
+                }} container spacing={5}>
+                    <Grid item xs={12} sm={12} md={4} lg={1} xl={4}>
+                        <div className={"sub"}>
+                            <h5>
+                                Ежемесячная подписка
+                            </h5>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+                        <div className={"sub"}>
+                            <h5>
+                                Ежемесячная подписка
+                            </h5>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+                        <div className={"sub"}>
+                            <h5>
+                                Ежемесячная подписка
+                            </h5>
+                        </div>
+                    </Grid>
+                </Grid>
+            </Box>
+            <Box sx={{
+                paddingTop:25,
+            }}>
+                <Typography variant={"h2"} sx={{textAlign:"center"}}>
                     Все наши услуги
-                </h2>
-                <div className={"div3buttons"}>
-                    <div className={"buttonrow"}>
-                        <Stack direction="row" spacing={8}>
-                            <Button sx = {{
-                                width: 304,
-                                height: 208,
-                                color: "#5B5B5B",
-                                borderRadius: "36px",
-                                border: 3,
-                                borderColor: "#5B5B5B",
-                                fontSize: "24px",
-                                textAlign: "center",
-                                ":hover": {
-                                    width: 304,
-                                    height: 208,
-                                    color: "#ffffff",
-                                    borderRadius: "36px",
-                                    border: 3,
-                                    borderColor: "#5B5B5B",
-                                    fontSize: "24px",
-                                    textAlign: "center",
-                                    background: "#5B5B5B"
-                                }
-                            }} variant="outlined" href="#outlined-buttons">
-                                Футбольное поле
-                            </Button>
-                            <Button sx = {{
-                                width: 304,
-                                height: 208,
-                                color: "#5B5B5B",
-                                borderRadius: "36px",
-                                border: 3,
-                                borderColor: "#5B5B5B",
-                                fontSize: "24px",
-                                textAlign: "center",
-                                ":hover": {
-                                    width: 304,
-                                    height: 208,
-                                    color: "#ffffff",
-                                    borderRadius: "36px",
-                                    border: 3,
-                                    borderColor: "#5B5B5B",
-                                    fontSize: "24px",
-                                    textAlign: "center",
-                                    background: "#5B5B5B"
-                                }
-                            }} variant="outlined" href="#outlined-buttons">
-                                Баскетбольное поле
-                            </Button>
-                            <Button sx = {{
-                                width: 304,
-                                height: 208,
-                                color: "#5B5B5B",
-                                borderRadius: "36px",
-                                border: 3,
-                                borderColor: "#5B5B5B",
-                                fontSize: "24px",
-                                textAlign: "center",
-                                ":hover": {
-                                    width: 304,
-                                    height: 208,
-                                    color: "#ffffff",
-                                    borderRadius: "36px",
-                                    border: 3,
-                                    borderColor: "#5B5B5B",
-                                    fontSize: "24px",
-                                    textAlign: "center",
-                                    background: "#5B5B5B"
-                                }
-                            }} variant="outlined" href="#outlined-buttons">
-                                Хоккейная арена
-                            </Button>
-                        </Stack>
-                    </div>
-                    <div className={"buttonrow"}>
-                        <Stack direction="row" spacing={8}>
-                            <Button sx = {{
-                                width: 304,
-                                height: 208,
-                                color: "#5B5B5B",
-                                borderRadius: "36px",
-                                border: 3,
-                                borderColor: "#5B5B5B",
-                                fontSize: "24px",
-                                textAlign: "center",
-                                ":hover": {
-                                    width: 304,
-                                    height: 208,
-                                    color: "#ffffff",
-                                    borderRadius: "36px",
-                                    border: 3,
-                                    borderColor: "#5B5B5B",
-                                    fontSize: "24px",
-                                    textAlign: "center",
-                                    background: "#5B5B5B"
-                                }
-                            }} variant="outlined" href="#outlined-buttons">
-                                Теннисный корт
-                            </Button>
-                            <Button sx = {{
-                                width: 304,
-                                height: 208,
-                                color: "#5B5B5B",
-                                borderRadius: "36px",
-                                border: 3,
-                                borderColor: "#5B5B5B",
-                                fontSize: "24px",
-                                textAlign: "center",
-                                ":hover": {
-                                    width: 304,
-                                    height: 208,
-                                    color: "#ffffff",
-                                    borderRadius: "36px",
-                                    border: 3,
-                                    borderColor: "#5B5B5B",
-                                    fontSize: "24px",
-                                    textAlign: "center",
-                                    background: "#5B5B5B"
-                                }
-                            }} variant="outlined" href="#outlined-buttons">
-                                Бассейн
-                            </Button>
-                            <Button sx = {{
-                                width: 304,
-                                height: 208,
-                                color: "#5B5B5B",
-                                borderRadius: "36px",
-                                border: 3,
-                                borderColor: "#5B5B5B",
-                                fontSize: "24px",
-                                textAlign: "center",
-                                ":hover": {
-                                    width: 304,
-                                    height: 208,
-                                    color: "#ffffff",
-                                    borderRadius: "36px",
-                                    border: 3,
-                                    borderColor: "#5B5B5B",
-                                    fontSize: "24px",
-                                    textAlign: "center",
-                                    background: "#5B5B5B"
-                                }
-                            }} variant="outlined" href="#outlined-buttons">
-                                Гольф поле
-                            </Button>
-                        </Stack>
-                    </div>
-                </div>
-            </div>
+                </Typography>
+                <Box sx={{
+                    padding:30
+                }}>
+                    <Grid container spacing={5}>
+                        <Grid item xs={12} sm={12} md={4}>
+                            <Buttonforhome/>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={4}>
+                            <Buttonforhome/>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={4}>
+                            <Buttonforhome/>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={4}>
+                            <Buttonforhome/>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={4}>
+                            <Buttonforhome/>
+                        </Grid>
+                        <Grid item xs={12} sm={12} md={4}>
+                            <Buttonforhome/>
+                        </Grid>
+                    </Grid>
+                </Box>
+
+            </Box>
+
         </>
     );
 };

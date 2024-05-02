@@ -6,6 +6,9 @@
     padding: 134px 40px;
     border-radius: 36px;
 }
+.introhome{
+    display: flex;
+}
 .homediv p{
     color: #5B5B5B;
     font-size: 40px;
@@ -13,70 +16,23 @@
     width: 486px;
 }
 .home{
-    display: flex;
     column-gap: 81px;
-    margin-top: 159px;
-    margin-left: 292px;
-    padding-bottom: 157px;
 }
-.home img{
+.homeimg img{
     height: 467px;
     width: 529px;
     object-fit: cover;
     border-radius: 36px;
 }
-.div2home h2{
-    font-size: 48px;
-    font-family: sans-serif, "Roboto";
-    color: #5B5B5B;
-    text-align: center;
-    margin-top: 89px;
-}
 .sub{
     background: #5B5B5B;
-    border-radius: 36px;
-    width: 362px;
+    color: white;
     height: 400px;
-    padding: 20px;
+    padding: 50px;
+    border-radius: 36px;
 }
 .sub h5{
+    font-family: "Roboto", sans-serif;
     font-size: 24px;
-    font-family: sans-serif, "Roboto";
-    width: 100%;
     text-align: center;
-    padding-top: 48px;
-    color: white;
-    font-weight: 400;
-}
-.sub p{
-    color: white;
-    text-align: center;
-    margin-top: 28px;
-}
-.subs{
-    display: flex;
-    column-gap: 75px;
-    margin-top: 205px;
-    margin-left: 310px;
-    margin-bottom: 101px;
-}
-.div3home{
-    margin-top: 136px;
-}
-.div3home h2{
-    font-size: 48px;
-    font-family: sans-serif, "Roboto";
-    color: #5B5B5B;
-    text-align: center;
-    margin-top: 89px;
-}
-.div3buttons{
-    display: block;
-    margin-top: 55px;
-    align-items: center;
-    width: 100%;
-    margin-left: 400px;
-}
-.buttonrow{
-    margin-top: 72px;
 }
