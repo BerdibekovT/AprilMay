@@ -40,22 +40,34 @@ const Home = () => {
                     <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
                         <div className={"sub"}>
                             <h5>
-                                Ежемесячная подписка
+                                Месячная подписка
                             </h5>
+                            <p>
+                                <span>559 сом</span> <br/>
+                                479 сом
+                            </p>
                         </div>
                     </Grid>
                     <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
                         <div className={"sub"}>
                             <h5>
-                                Ежемесячная подписка
+                                Полугодовая подписка
                             </h5>
+                            <p>
+                                <span>2 795 сом</span> <br/>
+                                2 395 сом
+                            </p>
                         </div>
                     </Grid>
                     <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
                         <div className={"sub"}>
                             <h5>
-                                Ежемесячная подписка
+                                Годовая подписка
                             </h5>
+                            <p>
+                                <span>6 790 сом</span> <br/>
+                                5 790 сом
+                            </p>
                         </div>
                     </Grid>
                 </Grid>

@@ -27,7 +27,6 @@
 .sub{
     background: #5B5B5B;
     color: white;
-    height: 400px;
     padding: 50px;
     border-radius: 36px;
 }
@@ -35,4 +34,15 @@
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     text-align: center;
+}
+.sub p{
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 40px;
+}
+.sub span{
+    font-weight: 300;
+    text-decoration: line-through;
 }
