@@ -13,8 +13,8 @@ import Buttonforhome from "./button";
 
 const Home = () => {
     return (
-        <>
-            <Container sx={{paddingTop:10}}>
+        <Container>
+            <Box sx={{paddingTop:10}}>
                 <Grid container spacing={5}>
                     <Grid item  xs={12} sm={12} md={6} lg={6} xl={6}>
                         <div className={"homediv"}>
@@ -29,7 +29,7 @@ const Home = () => {
                         </div>
                     </Grid>
                 </Grid>
-            </Container>
+            </Box>
             <Box sx={{paddingTop:20}}>
                 <Typography variant={"h2"} sx={{textAlign:"center"}}>
                     Оформите подписку!
@@ -37,7 +37,7 @@ const Home = () => {
                 <Grid sx={{
                     padding:10
                 }} container spacing={5}>
-                    <Grid item xs={12} sm={12} md={4} lg={1} xl={4}>
+                    <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
                         <div className={"sub"}>
                             <h5>
                                 Ежемесячная подписка
@@ -69,31 +69,31 @@ const Home = () => {
                 <Box sx={{
                     padding:30
                 }}>
-                    <Grid container spacing={5}>
+                    <Grid container spacing={3}>
                         <Grid item xs={12} sm={12} md={4}>
-                            <Buttonforhome/>
+                            <Buttonforhome title={"Футбольное поле"}/>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4}>
-                            <Buttonforhome/>
+                            <Buttonforhome title={"Баскетбольное поел"}/>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4}>
-                            <Buttonforhome/>
+                            <Buttonforhome title={"Поле для гольфа"}/>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4}>
-                            <Buttonforhome/>
+                            <Buttonforhome title={"Спортзал для качки"}/>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4}>
-                            <Buttonforhome/>
+                            <Buttonforhome title={"Хоккейная арена"}/>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4}>
-                            <Buttonforhome/>
+                            <Buttonforhome title={"Теннисный корт"}/>
                         </Grid>
                     </Grid>
                 </Box>
 
             </Box>
 
-        </>
+        </Container>
     );
 };
 

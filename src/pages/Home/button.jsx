@@ -2,20 +2,21 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 
-const Buttonforhome = () => {
+const Buttonforhome = ({title}) => {
     return (
         <div>
             <Button variant="outlined" sx={{
                 color: "#5B5B5B",
-                fontSize:"24px",
+                fontSize:"16px",
                 border: "4px solid #5b5b5b",
-                padding: 10,
+                padding: 5,
+                width: "100%",
                 ":hover":{
                     color:"white",
                     background:"#5b5b5b",
                     border: "4px solid #5b5b5b",
                 }
-            }}> Футбольное поле </Button>
+            }}> {title} </Button>
         </div>
     );
 };
