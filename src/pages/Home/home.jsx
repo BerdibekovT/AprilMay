@@ -31,7 +31,11 @@ const Home = () => {
                 </Grid>
             </Box>
             <Box sx={{paddingTop:20}}>
-                <Typography variant={"h2"} sx={{textAlign:"center"}}>
+                <Typography variant={"h2"} sx={{
+                    textAlign:"center",
+                    fontWeight:"400",
+                    color: "#5b5b5b",
+                }}>
                     Оформите подписку!
                 </Typography>
                 <Grid sx={{
@@ -75,7 +79,11 @@ const Home = () => {
             <Box sx={{
                 paddingTop:25,
             }}>
-                <Typography variant={"h2"} sx={{textAlign:"center"}}>
+                <Typography variant={"h2"} sx={{
+                    textAlign:"center",
+                    fontWeight:"400",
+                    color: "#5b5b5b",
+                }}>
                     Все наши услуги
                 </Typography>
                 <Box sx={{

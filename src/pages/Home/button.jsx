@@ -11,6 +11,7 @@ const Buttonforhome = ({title}) => {
                 border: "4px solid #5b5b5b",
                 padding: 5,
                 width: "100%",
+                borderRadius: "16px",
                 ":hover":{
                     color:"white",
                     background:"#5b5b5b",
