@@ -9,7 +9,10 @@ const Header = () => {
         <>
             <Container sx={{padding:5, flexDirection:"row", columnGap:10, justifyContent:"center", display:{sm:"none", md:"flex"}}}>
 
-                <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Главная</Button>
+                <Link to={"/"}>
+                    <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Главная</Button>
+                </Link>
+
 
                 <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Поле</Button>
 
