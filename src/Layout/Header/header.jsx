@@ -2,7 +2,7 @@ import React from 'react';
 import './header.css'
 import Button from '@mui/material/Button';
 import { Box, Container, Grid } from "@mui/material";
-import Link from '@mui/material/Link';
+import {Link} from "react-router-dom"
 
 const Header = () => {
     return (
@@ -12,7 +12,6 @@ const Header = () => {
                 <Link to={"/"}>
                     <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Главная</Button>
                 </Link>
-
 
                 <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Поле</Button>
 

@@ -3,7 +3,7 @@ import PocketBase from 'pocketbase'
 import {Grid, Container, Typography } from "@mui/material";
 import Post from "../post/post";
 
-const Football = () => {
+const GolfField = () => {
 
     const [loading, setLoading] = useState(true);
     const [selected, setSelected] = useState(0);
@@ -14,7 +14,7 @@ const Football = () => {
     const getField = async () => {
         const Result = await pb.collection("Rent").getList(1, 50, {
             $autoCancel: false,
-            filter:'categor_id = "footbol_field13"'
+            filter:'categor_id = "golf12345678911"'
         });
         console.log(Result)
         setField(Result);
@@ -58,4 +58,4 @@ const Football = () => {
     );
 };
 
-export default Football;
+export default GolfField;

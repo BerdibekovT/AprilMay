@@ -10,6 +10,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import Buttonforhome from "./button";
+import {Link} from "react-router-dom"
 
 const Home = () => {
     return (
@@ -91,13 +92,17 @@ const Home = () => {
                 }}>
                     <Grid container spacing={3}>
                         <Grid item xs={12} sm={12} md={4}>
-                            <Buttonforhome title={"Футбольное поле"}/>
+                             <Link to={"/football"}> <Buttonforhome title={"Футбольное поле"}/></Link>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4}>
-                            <Buttonforhome title={"Баскетбольное поел"}/>
+                            <Link to={"/basketball"}>
+                                <Buttonforhome title={"Баскетбольное поле"}/>
+                            </Link>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4}>
-                            <Buttonforhome title={"Поле для гольфа"}/>
+                            <Link to={"golffield"}>
+                                <Buttonforhome title={"Поле для гольфа"}/>
+                            </Link>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4}>
                             <Buttonforhome title={"Спортзал для качки"}/>
