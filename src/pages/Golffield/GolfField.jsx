@@ -16,7 +16,6 @@ const GolfField = () => {
             $autoCancel: false,
             filter:'categor_id = "golf12345678911"'
         });
-        console.log(Result)
         setField(Result);
         setLoading(false);
     };

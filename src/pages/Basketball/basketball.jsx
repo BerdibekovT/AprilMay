@@ -16,7 +16,6 @@ const Basketball = () => {
             $autoCancel: false,
             filter:'categor_id = "basketball12345"'
         });
-        console.log(Result);
         setField(Result);
         setLoading(false);
     };

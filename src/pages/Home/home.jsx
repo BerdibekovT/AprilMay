@@ -105,13 +105,19 @@ const Home = () => {
                             </Link>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4}>
-                            <Buttonforhome title={"Спортзал для качки"}/>
+                            <Link to={'/gym'}>
+                                <Buttonforhome title={"Спортзал для качки"}/>
+                            </Link>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4}>
-                            <Buttonforhome title={"Хоккейная арена"}/>
+                            <Link to={'/hockey'}>
+                                <Buttonforhome title={"Хоккейная арена"}/>
+                            </Link>
                         </Grid>
                         <Grid item xs={12} sm={12} md={4}>
-                            <Buttonforhome title={"Теннисный корт"}/>
+                            <Link to={'/bigtennis'}>
+                                <Buttonforhome title={"Теннисный корт"}/>
+                            </Link>
                         </Grid>
                     </Grid>
                 </Box>
