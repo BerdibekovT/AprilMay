@@ -33,19 +33,26 @@ const Help = () => {
                     paddingTop: "140px"
                 }}>
                     <Link to={"/"}>
-                        <Button variant="outlined" sx={{
-                            color: "#5B5B5B",
-                            fontSize:"16px",
-                            border: "4px solid #5b5b5b",
-                            padding: 5,
-                            borderRadius: "16px",
+                        <div style={{
                             display: "flex",
-                            ":hover":{
-                                color:"white",
-                                background:"#5b5b5b",
+                            flexDirection: "row",
+                            justifyContent:"center",
+                            textDecoration: "none",
+                        }}>
+                            <Button variant="outlined" sx={{
+                                color: "#5B5B5B",
+                                fontSize:"16px",
                                 border: "4px solid #5b5b5b",
-                            }
-                        }}> На главную </Button>
+                                padding: 5,
+                                borderRadius: "16px",
+                                textDecoration: "none",
+                                ":hover":{
+                                    color:"white",
+                                    background:"#5b5b5b",
+                                    border: "4px solid #5b5b5b",
+                                }
+                            }}> На главную </Button>
+                        </div>
                     </Link>
                 </Grid>
             </Container>
