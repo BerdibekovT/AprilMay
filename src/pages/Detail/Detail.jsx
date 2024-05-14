@@ -29,20 +29,32 @@ const Detail = () => {
             {!loading ? (
                 <>
                     <Container className={"details"}>
-                        <img
-                            height={350}
-                            src={`https://book-shop.fly.dev/api/files/Rent/${post.id}/${post.img}`}
-                            alt=""/>
-                            <div>
-                                <div style={{
-                                    fontSize:"25px",
-                                    color:"#5b5b5b",
-                                    fontFamily: "Roboto",
-                                    textAlign: "left"
-                                }} dangerouslySetInnerHTML={{__html:post.definition_,}}>
-                                </div>
-                                <h3> Цена: {post.price} сом</h3>
+                        <div style={{
+                            display: "flex",
+                            columnGap: "20px"
+                        }}>
+                            <img
+                                height={350}
+                                src={`https://book-shop.fly.dev/api/files/Rent/${post.id}/${post.img[0]}`}
+                                alt=""
+                            />
+                            <img
+                                height={350}
+                                src={`https://book-shop.fly.dev/api/files/Rent/${post.id}/${post.img[1]}`}
+                                alt=""
+                            />
+                        </div>
+                        <div>
+                            <div className={"detaildescription"} style={{
+                                fontSize:"25px",
+                                color:"#5b5b5b",
+                                fontFamily: "Roboto",
+                                textAlign: "left",
+                                paddingTop: "100px"
+                            }} dangerouslySetInnerHTML={{__html:post.definition_,}}>
                             </div>
+                            <h3> Цена: {post.price} сом</h3>
+                        </div>
                     </Container>
                 </>
             ) : (

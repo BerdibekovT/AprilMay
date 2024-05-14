@@ -39,6 +39,7 @@ const Help = () => {
                             border: "4px solid #5b5b5b",
                             padding: 5,
                             borderRadius: "16px",
+                            display: "flex",
                             ":hover":{
                                 color:"white",
                                 background:"#5b5b5b",

@@ -27,17 +27,6 @@ const BigTennis = () => {
     return (
         <>
             <Container>
-                <Typography
-                    mt={2}
-                    pb={1}
-                    fontWeight={550}
-                    gutterBottom
-                    varian={"h7"}
-                    component={"div"}
-                >
-                    Fields
-                </Typography>
-
                 <Grid container spacing={1.5}>
                     {!loading?(
                         field?.items?.map((e)=>(
