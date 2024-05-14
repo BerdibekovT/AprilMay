@@ -3,7 +3,7 @@ import {Card, CardActionArea, CardContent, CardMedia, Typography} from "@mui/mat
 import { useNavigate} from "react-router-dom"
 
 
-const Post = ({id, title, img, description}) => {
+const Post = ({id, title, img, definition}) => {
 
     const navigate = useNavigate();
 
@@ -19,13 +19,17 @@ const Post = ({id, title, img, description}) => {
                     height={"140"}
                     image={`https://book-shop.fly.dev/api/files/Rent/${id}/${img}`}
                     alt={"Pic"}
+                    sx={{
+                        height: "200px",
+                    }}
                 />
                 <CardContent>
-                    <Typography p={0} gutterBottom variant={"h5"} component={"div"}>
+                    <Typography p={0} gutterBottom variant={"h5"} component={"div"} sx={{
+                        color: "#5b5b5b",
+                        fontFamily: "Roboto",
+                        textAlign: "center",
+                    }}>
                         {title}
-                    </Typography>
-                    <Typography p={0} variant={"body2"} color={"text.secondary"}>
-                        {description}
                     </Typography>
                 </CardContent>
             </CardActionArea>

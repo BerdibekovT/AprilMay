@@ -10,6 +10,7 @@ import GolfField from "./pages/Golffield/GolfField";
 import Gym from "./pages/Gym/gym";
 import Hockey from "./pages/Hockey/Hockey";
 import BigTennis from "./pages/BigTennis/BigTennis";
+import Detail from "./pages/Detail/Detail";
 
 
 
@@ -26,6 +27,7 @@ function App() {
             <Route path={'/gym'} element={<Gym/>}/>
             <Route path={'/hockey'} element={<Hockey/>}/>
             <Route path={'/bigtennis'} element={<BigTennis/>}/>
+            <Route path={'/Rent/:id'} element={<Detail/>}/>
         </Route>
           <Route path={'*'} element={<Error/>}/>
       </Routes>
