@@ -12,19 +12,21 @@ const Header = () => {
                 <Link to={"/"}>
                     <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Главная</Button>
                 </Link>
-
-                <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Поле</Button>
-
-                <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Спортзал</Button>
-
-                <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Корт</Button>
-
-                <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Бассейн</Button>
-
-                <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Арена</Button>
-
-
-
+                <Link to={"/football"}>
+                    <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Футбол</Button>
+                </Link>
+                <Link to={"/basketball"}>
+                    <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Баскетбол</Button>
+                </Link>
+                <Link to={"/bigtennis"}>
+                    <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Теннис</Button>
+                </Link>
+                <Link to={"/pool"}>
+                    <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Бассейн</Button>
+                </Link>
+                <Link to={"/volleyball"}>
+                    <Button sx={{color: "#5B5B5B", fontSize: "20px"}} variant="text" >Волейбол</Button>
+                </Link>
             </Container>
             <Button sx={{color: "#5B5B5B", fontSize: "20px", display:{sm:"block", md:"none"}}} variant="text" >menu</Button>
         </>

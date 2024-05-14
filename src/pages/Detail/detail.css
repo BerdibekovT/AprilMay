@@ -1,0 +1,12 @@
+.details{
+    display: flex;
+    padding: 100px;
+    column-gap: 50px;
+}
+.details img{
+    border-radius: 36px;
+}
+.details h3{
+    color: #5b5b5b;
+    font-size: 24px;
+}

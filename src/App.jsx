@@ -11,6 +11,8 @@ import Gym from "./pages/Gym/gym";
 import Hockey from "./pages/Hockey/Hockey";
 import BigTennis from "./pages/BigTennis/BigTennis";
 import Detail from "./pages/Detail/Detail";
+import Pool from "./pages/Pool/pool";
+import Volleyball from "./pages/Volleyball/volleyball";
 
 
 
@@ -28,6 +30,8 @@ function App() {
             <Route path={'/hockey'} element={<Hockey/>}/>
             <Route path={'/bigtennis'} element={<BigTennis/>}/>
             <Route path={'/Rent/:id'} element={<Detail/>}/>
+            <Route path={'/pool'} element={<Pool/>}/>
+            <Route path={'/volleyball'} element={<Volleyball/>}/>
         </Route>
           <Route path={'*'} element={<Error/>}/>
       </Routes>

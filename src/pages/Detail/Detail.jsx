@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import { NavLink, useParams} from "react-router-dom";
 import PocketBase from 'pocketbase';
 import { Box, CircularProgress, Container, Typography, AppBar, Link } from "@mui/material";
+import './detail.css'
 
 
 const Detail = () => {
@@ -15,7 +16,7 @@ const Detail = () => {
             $autoCancel: false,
         });
         setPost(result);
-        console.log(result)
+        console.log(result);
         setLoading(false);
     };
 
@@ -32,8 +33,16 @@ const Detail = () => {
                             height={350}
                             src={`https://book-shop.fly.dev/api/files/Rent/${post.id}/${post.img}`}
                             alt=""/>
-                        <div className="content" dangerouslySetInnerHTML={{__html:post.content}}>
-                        </div>
+                            <div>
+                                <div style={{
+                                    fontSize:"25px",
+                                    color:"#5b5b5b",
+                                    fontFamily: "Roboto",
+                                    textAlign: "left"
+                                }} dangerouslySetInnerHTML={{__html:post.definition_,}}>
+                                </div>
+                                <h3> Цена: {post.price} сом</h3>
+                            </div>
                     </Container>
                 </>
             ) : (
@@ -41,7 +50,10 @@ const Detail = () => {
                     display: "flex",
                     justifyContent:"center",
                     alignItems: "center",
-                    height: "100px"
+                    height: "100px",
+                    fontSize: "30px",
+                    color:"#5b5b5b",
+                    fontWeight: "400"
                 }}>
                     Загрузка... &nbsp;
                     <CircularProgress/>

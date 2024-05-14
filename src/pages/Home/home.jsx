@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css'
-import castle from "../../pics/minecraft-castle.png"
+import castle from "../../pics/stadium.jpg"
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { Box, Container, Grid } from "@mui/material";
@@ -37,7 +37,7 @@ const Home = () => {
                     fontWeight:"400",
                     color: "#5b5b5b",
                 }}>
-                    Оформите подписку!
+                    Способ забронировать!
                 </Typography>
                 <Grid sx={{
                     padding:10
@@ -45,33 +45,30 @@ const Home = () => {
                     <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
                         <div className={"sub"}>
                             <h5>
-                                Месячная подписка
+                                Вид спорта
                             </h5>
                             <p>
-                                <span>559 сом</span> <br/>
-                                479 сом
+                                У нас есть все помещения для каждого вида спорта!
                             </p>
                         </div>
                     </Grid>
                     <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
                         <div className={"sub"}>
                             <h5>
-                                Полугодовая подписка
+                                Возможности
                             </h5>
                             <p>
-                                <span>2 795 сом</span> <br/>
-                                2 395 сом
+                                Вы сможете связаться с влдаельцами через нас!
                             </p>
                         </div>
                     </Grid>
                     <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
                         <div className={"sub"}>
                             <h5>
-                                Годовая подписка
+                                Информация
                             </h5>
                             <p>
-                                <span>6 790 сом</span> <br/>
-                                5 790 сом
+                                У нас вы легко узнаете все подробности помещений!
                             </p>
                         </div>
                     </Grid>

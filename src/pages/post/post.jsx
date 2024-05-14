@@ -17,7 +17,7 @@ const Post = ({id, title, img, definition}) => {
                 <CardMedia
                     component={"img"}
                     height={"140"}
-                    image={`https://book-shop.fly.dev/api/files/Rent/${id}/${img}`}
+                    image={`https://book-shop.fly.dev/api/files/Rent/${id}/${img[0]}`}
                     alt={"Pic"}
                     sx={{
                         height: "200px",
