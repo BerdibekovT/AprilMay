@@ -28,6 +28,7 @@ const Post = ({id, title, img, definition}) => {
                         color: "#5b5b5b",
                         fontFamily: "Roboto",
                         textAlign: "center",
+                        fontSize: "24px",
                     }}>
                         {title}
                     </Typography>

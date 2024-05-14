@@ -13,6 +13,7 @@ import BigTennis from "./pages/BigTennis/BigTennis";
 import Detail from "./pages/Detail/Detail";
 import Pool from "./pages/Pool/pool";
 import Volleyball from "./pages/Volleyball/volleyball";
+import Help from "./pages/Help/help";
 
 
 
@@ -33,6 +34,7 @@ function App() {
             <Route path={'/pool'} element={<Pool/>}/>
             <Route path={'/volleyball'} element={<Volleyball/>}/>
         </Route>
+          <Route path={'/help'} element={<Help/>}/>
           <Route path={'*'} element={<Error/>}/>
       </Routes>
     </>

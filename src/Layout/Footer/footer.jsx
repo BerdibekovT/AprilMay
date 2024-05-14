@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import { Box, Container, Grid } from "@mui/material";
 import FooterButton from "./footerButton";
 import './footer.css'
+import {Link} from "react-router-dom";
 
 
 const Footer = () => {
@@ -12,13 +13,14 @@ const Footer = () => {
                 <Box sx={{display: "flex"}}>
                     <Grid container  sx={{padding:5, flexDirection:"row", columnGap:10, }}>
                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12} >
-                            <FooterButton title={"Главная"}/>
+                            <Link to={'/'}>
+                                <FooterButton title={"Главная"}/>
+                            </Link>
                         </Grid>
                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                            <FooterButton title={"О нас"}/>
-                        </Grid>
-                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                            <FooterButton title={"Поддержка"}/>
+                            <Link to={'/help'}>
+                                <FooterButton title={"Поддержка"}/>
+                            </Link>
                         </Grid>
                     </Grid>
                 </Box>
